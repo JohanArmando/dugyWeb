@@ -1,0 +1,5 @@
+export const ALL_RACE = 'pets/ALL_RACE'
+export const SHOW_RACE = 'pet/SHOW_RACE'
+export const REGISTER_RACE = 'pet/REGISTER_RACE'
+export const EDIT_RACE = 'pet/EDIT_RACE'
+export const REMOVE_RACE = 'pet/REMOVE_RACE'

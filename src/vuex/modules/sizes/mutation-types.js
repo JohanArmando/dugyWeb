@@ -1,0 +1,5 @@
+export const ALL_SIZE = 'pets/ALL_SIZE'
+export const SHOW_SIZE = 'pet/SHOW_SIZE'
+export const REGISTER_SIZE = 'pet/REGISTER_SIZE'
+export const EDIT_SIZE = 'pet/EDIT_SIZE'
+export const REMOVE_SIZE = 'pet/REMOVE_SIZE'

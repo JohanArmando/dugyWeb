@@ -1,0 +1,5 @@
+export const ALL_PET = 'pets/ALL_PET'
+export const SHOW_PET = 'pet/SHOW_PET'
+export const REGISTER_PET = 'pet/REGISTER_PET'
+export const EDIT_PET = 'pet/EDIT_PET'
+export const REMOVE_PET = 'pet/REMOVE_PET'

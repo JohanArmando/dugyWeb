@@ -1,0 +1,175 @@
+$icon-font-path: '../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+$link-color: #42b983;
+$brand-success: #42b983;
+// Body
+$body-bg: #fff;
+
+// Borders
+$laravel-border-color: darken($body-bg, 10%);
+$list-group-border: $laravel-border-color;
+$navbar-default-border: $laravel-border-color;
+$panel-default-border: $laravel-border-color;
+$panel-inner-border: $laravel-border-color;
+
+// Brands
+$brand-primary: #3097D1;
+$brand-info: #8eb4cb;
+$brand-success: #2ab27b;
+$brand-warning: #cbb956;
+$brand-danger: #bf5329;
+
+// Typography
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+$font-family-sans-serif: "Roboto", sans-serif;
+$font-size-base: 14px;
+$line-height-base: 1.6;
+$text-color: #636b6f;
+
+// Navbar
+$navbar-default-bg: #fff;
+
+// Buttons
+$btn-default-color: $text-color;
+
+// Inputs
+$input-border: lighten($text-color, 40%);
+$input-border-focus: lighten($brand-primary, 25%);
+$input-color-placeholder: lighten($text-color, 30%);
+
+// Panels
+$panel-default-heading-bg: #fff;
+
+// font awesome
+$fa-font-path: '../node_modules/font-awesome/fonts/';
+
+a{color: #29AFA0 !important;font-size: 16px !important;}
+.affix {  top: 0;  z-index: 2;  width: 100%; border-bottom: 1px solid #ccc }
+.backPage{background-color: #ccc !important;}
+.backgroundColorGrey{background-color: #EEEEEE; padding: 10px; border-radius: 10px}
+.backgroundRegister{background: linear-gradient(90deg, #57C7DA 50%, #FFF 50%);}
+.black{color: black;}
+.brandoggy{width: 230px !important;}
+.borderDashed{border: 2px dashed #29AFA0; border-radius: 10px; padding: 10px}
+.bottom20 {margin-bottom: 20px;}
+.bottom50 {margin-bottom: 50px;}
+.bottom60 {margin-bottom: 60px;}
+.bottom80 {margin-bottom: 80px;}
+.bottom90 {margin-bottom: 90px;}
+.bottom98 {margin-bottom: 98px;}
+.bottom100 {margin-bottom: 100px;}
+.bottom110 {margin-bottom: 110px;}
+.bottom120 {margin-bottom: 120px;}
+.bottom150 {margin-bottom: 150px;}
+.bottom200 {margin-bottom: 200px;}
+.boxDoggy{ border-radius: 10px; border: 2px solid #29AFA0;margin: 5px}
+.btn-mr {background-color: white !important;  color: #29AFA0 !important;  border: 1px solid #29AFA0 !important;  border-radius: 20px !important;  padding: 5px 20px 5px 20px !important;}
+.btn-mr:hover {background-color: #29AFA0 !important;  color: white !important;  border: 1px solid #29AFA0 !important;  border-radius: 20px !important;  padding: 5px 20px 5px 20px !important;}
+.btn-Doggy {margin-top: 7px;  background-color: #29AFA0 !important;  color: white !important; font-size: 18px !important; border: 1px solid #29AFA0 !important;  border-radius: 20px !important;  padding: 5px 20px 5px 20px !important;}
+.btn-doggy{background-color: #29AFA0 !important;border: 1px solid #29AFA0 !important;}
+.buttonImg{max-width: 100px !important;}
+.colorDoggy{color: #29AFA0 !important;}
+.colorMenu{background-color: #252D3A !important}
+.contact{background-color: #29AFA0 !important}
+.cursorPointer{cursor: pointer;}
+.dangerDoggy{color: #29AFA0 !important;margin-bottom: 10px !important; margin-left: 3% !important;}
+.full-height{background-size: cover;width: 100%;height: 100%;display: block;}
+.home{position: relative; min-height:  calc(100vh - 55px);}
+.hrDogyy{margin-left: 5px; margin-right: 5px; border-bottom: 1px solid #29AFA0 !important}
+.hrDogyyNotMargin{margin-top: 0 !important;margin-bottom: 0 !important}
+.img-plan{z-index: 1;position: absolute}
+.imgBack{position: absolute; z-index: 0}
+.img-edit{max-width: 100px;  max-height: 150px;}
+.imgSmall{max-width: 30px  !important}
+.imgMedium{max-width: 80px !important;}
+.imgPlan{max-height: 80px !important;margin: 10% !important;}
+.imgProfile{max-height: 60px !important;margin: 10% !important;}
+.info-box-icon{min-height: 50px}
+.info-box-content{width: 70%;min-height: 50px;padding: 5%}
+.info-doggy{background-color: #29AFA0}
+.info-box-text{float: left}
+.info-box-number{float: left}
+.inputDoggy{border: 2px solid #29AFA0 !important;border-radius: 20px !important;padding: 20px !important;}
+.inputDoggySquare{border: 2px solid white !important;border-radius: 0!important;padding: 20px !important;}
+.itemsDoggy{margin-top: 6px !important;}
+.label-doggy{background-color: #29AFA0 !important}
+.label-doggy-delete{background-color: #DD4C40 !important}
+.logo {max-width: 50px !important;}
+.list-group-item {border: 1px solid white !important}
+.listDoggy{border-left: 4px solid #29AFA0 !important;}
+.list-group-item.active { background-color: #EEEEEE !important;}
+.marginLeft{margin-left: 10% !important;}
+.marginLeft10{margin-left: 10px !important;}
+.marginLeft20{margin-left: 20px !important;}
+.marginRight5{margin-right: 5px !important}
+.marginRight10{margin-right: 10px !important}
+.marginRight20{margin-right: 20px !important}
+.menu{min-height:  calc(100vh - 52px) ;}
+.modalBodyMrDoggy{padding: 0 !important;}
+.modalContentMrDoggy{border-radius: 0 !important;margin-right: 0 !important;margin-left: 0 !important;}
+.nav-mr {margin-bottom: 0 !important; }
+.navbar-brand{  padding: 5px !important;  }
+.navbar-brand.brand2{  padding: 15px !important;}
+.navbar-brand.brandoggy{  padding: 15px !important;  }
+.navbar-collapse {  background: white !important;}
+.navbar-collapse.walker {  background: #29AFA0 !important;}
+.navbar.navbar-default.navbar-defa {background-color: #29AFA0 !important;border: none !important;}
+.noteDoggy{min-height: 200px !important;}
+.padding10{padding: 10px !important;}
+.padding20{padding: 20px !important;}
+.panelDoggy{border: 1px solid #29AFA0 }
+.panel-heading-doggy{background-color: #29AFA0 !important;color: white !important;}
+.psinMarginBottom{margin-bottom: 0 !important;}
+.selectDoggy{height: 45px !important;border: 2px solid #29AFA0 !important;border-radius: 20px !important;color: #29AFA0 !important;}
+.sidebar .sidebar-nav .metismenu li a {color: #878D99 !important;}
+.sinMarginRight{padding-right: 0 !important;}
+.sinMarginLeft{padding-left: 0 !important;}
+.sinMarginTop{padding-top: 0 !important;}
+.sinMargin{ margin: 0px !important;}
+.textSmall{font-size: 18px;}
+.textMedium{font-size: 22px;}
+.titlePanel{margin-left: 10px; font-size: 16px; color: #29AFA0;font-weight: bold;}
+.toggleDoggy{padding: 10px !important;border: 1px solid #29AFA0 !important;margin: 10px !important; border-radius: 5px !important;}
+.top5 {margin-top: 5px;}
+.top10 {margin-top: 10px;}
+.top20 {margin-top: 20px;}
+.top30 {margin-top: 30px;}
+.top40 {margin-top: 40px;}
+.top50 {margin-top: 50px;}
+.top80 {margin-top: 80px;}
+.top90 {margin-top: 90px;}
+.top100 {margin-top: 100px;}
+.top200 {margin-top: 200px;}
+.top220 {margin-top: 220px;}
+.trBodyDoggy{border-bottom: 1px solid rgba(128, 128, 128, 0.14) !important;}
+.trHeadDoggy{border-bottom: 1px solid rgba(0, 0, 0, 0.42) !important;}
+.width-brand{ width: 230px !important;}
+.white{color: white;font-size: 36px}
+.whiteColor{color: white}
+.whiteSmall{color: white;font-size: 22px}
+.widget-icon{padding: 15%; font-size: 25px !important; color: #fff !important}
+::-webkit-input-placeholder {color: rgba(41, 175, 160, 0.42) !important;}
+
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {  position: absolute;  left: -9999px;  }
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {  position: relative;  padding-left: 1.95em;  cursor: pointer;  }
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {  content: '';  position: absolute;  left: 0; top: 0;  width: 1.25em; height: 1.25em;  border: 2px solid rgba(0, 0, 0, 0.38);  background: #fff;  border-radius: 10px;  box-shadow: inset 0 1px 3px rgba(0,0,0,.1);  }
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {  content: 'x';  position: absolute;  top: .1em; left: .3em;  font-size: 1.2em;  line-height: 0.8;  color: #09ad7e;  transition: all .2s;  }
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {  opacity: 0;  transform: scale(0);  }
+[type="checkbox"]:checked + label:after {  opacity: 1;  transform: scale(1);  }
+/* disabled checkbox */
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {  box-shadow: none;  border-color: #bbb;  background-color: #ddd;  }
+[type="checkbox"]:disabled:checked + label:after {  color: #999;
+}
+[type="checkbox"]:disabled + label {  color: #aaa;  }
+/* accessibility */
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {  border: 2px dotted #29afa0;  }

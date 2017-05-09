@@ -1,0 +1,5 @@
+export const ALL_PLAN = 'plans/ALL_PLAN'
+export const SHOW = 'plan/SHOW'
+export const REGISTER = 'plan/REGISTER'
+export const REMOVE_PLAN = 'plan/REMOVE_PLAN'
+export const EDIT_PLAN = 'plan/EDIT_PLAN'
