@@ -44,10 +44,6 @@
                         <form @submit.prevent="putUser">
                           <div class="col-md-6">
                               <div class="form-group">
-                                 <label>Id</label>
-                                 <input :value="user.id" class="form-control" disabled/>
-                              </div>
-                              <div class="form-group">
                                  <label>Nombre</label>
                                  <input v-on:input="updateValue('name',$event)" :value="user.name" class="form-control" required/>
                               </div>
@@ -55,12 +51,12 @@
                                  <label>Apellido</label>
                                  <input v-on:input="updateValue('last_name',$event)" :value="user.last_name" class="form-control" required/>
                               </div>
+                              <div class="form-group">
+                                 <label>Email</label>
+                                 <input v-on:input="updateValue('email',$event)" :value="user.email" class="form-control" required/>
+                              </div>
                           </div>
                           <div class="col-md-6">
-                            <div class="form-group">
-                               <label>Email</label>
-                               <input v-on:input="updateValue('email',$event)" :value="user.email" class="form-control" required/>
-                            </div>
                             <div class="form-group">
                                <label>Documento</label>
                                <input v-on:input="updateValue('documentation',$event)" :value="user.documentation" class="form-control" type="number" required/>
@@ -124,7 +120,7 @@ export default {
       this.aux_user.id = this.user.id
       vm.editUser(this.aux_user).then(user => {
         vm.loading = false
-        vm.$router.replace(this.$route.query.redirect || '/walker/dashboard')
+        vm.$router.replace(this.$route.query.redirect || '/client/dashboard')
       })
       .catch(message => {
         window.$('#edit').button('reset')

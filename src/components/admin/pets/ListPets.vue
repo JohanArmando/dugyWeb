@@ -33,7 +33,7 @@
                               <div class="col-md-12">
                                   <p><i class="fa fa-paw"></i> {{ pet.race.name }}</p>
                                   <p><i class="fa fa-calendar"></i> ({{ pet.born_date.substring(0,10) }})</p>
-                                  <p><i class="fa fa-minus-circle"></i> {{ pet.size.slug}}</p>
+                                  <p><i class="fa fa-minus-circle"></i> {{ pet.size.name}}</p>
                                   <hr class="hrDogyy">
                                   <p>
                                     <span>
@@ -97,7 +97,7 @@ export default {
     })
   },
   methods: {
-    deletePlan () {
+    deletePet () {
       var vm = this
       vm.deletePet(this.pet).then(plan => {
         vm.loading = false

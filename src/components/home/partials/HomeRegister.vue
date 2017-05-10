@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-6 hidden-xs hidden-sm">
           <img class="img-responsive center-block" src="../../../assets/img/home1.png">
       </div>
       <div class="col-md-4 col-md-offset-1">
@@ -66,13 +66,13 @@ export default {
       vm.loading = true
       window.$('#registerUser').button('loading')
       vm.register(this.form).then(user => {
-        if (user.role.slug === 'walker') {
+        if (user.role === 4) {
           vm.$router.replace(this.$route.query.redirect || '/walker/dashboard')
         } else {
-          if (user.role.slug === 'admin') {
+          if (user.role === 2) {
             vm.$router.replace(this.$route.query.redirect || '/admin/dashboard')
           } else {
-            if (user.role.slug === 'client') {
+            if (user.role === 3) {
               vm.$router.replace(this.$route.query.redirect || '/client/dashboard')
             }
           }

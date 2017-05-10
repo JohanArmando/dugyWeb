@@ -5,7 +5,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
                     <h1>
                         Perfil
-                        <small>Lorem ipsum dolor sit amet, ut sea</small>
+                        <small>Mi Perfil</small>
                     </h1>
                 </div>
             </div>
@@ -14,16 +14,6 @@
           <div class="panel panel-default" id="panel-fullscreen">
               <div class="panel-heading">
                   Mi perfil
-                  <div class="panel-controls">
-                      <a href="javascript:void(0);" class="panel-fullscreen" data-toggle="tooltip"
-                          data-title="Expandir" data-placement="bottom" data-original-title=""title="">
-                          <i class="fa fa-expand"></i>
-                      </a>
-                      <a href="javascript:void(0);" class="panel-collapsable" data-toggle="tooltip"
-                          data-title="Minimizar" data-placement="bottom" data-original-title="" title="">
-                          <i class="fa fa-chevron-up"></i>
-                      </a>
-                  </div>
               </div>
               <div class="panel-body">
                 <div class="row clearfix">
@@ -44,10 +34,6 @@
                         <form @submit.prevent="putUser">
                           <div class="col-md-6">
                               <div class="form-group">
-                                 <label>Id</label>
-                                 <input :value="user.id" class="form-control" disabled/>
-                              </div>
-                              <div class="form-group">
                                  <label>Nombre</label>
                                  <input v-on:input="updateValue('name',$event)" :value="user.name" class="form-control" required/>
                               </div>
@@ -55,12 +41,12 @@
                                  <label>Apellido</label>
                                  <input v-on:input="updateValue('last_name',$event)" :value="user.last_name" class="form-control" required/>
                               </div>
+                              <div class="form-group">
+                                 <label>Email</label>
+                                 <input v-on:input="updateValue('email',$event)" :value="user.email" class="form-control" required/>
+                              </div>
                           </div>
                           <div class="col-md-6">
-                            <div class="form-group">
-                               <label>Email</label>
-                               <input v-on:input="updateValue('email',$event)" :value="user.email" class="form-control" required/>
-                            </div>
                             <div class="form-group">
                                <label>Documento</label>
                                <input v-on:input="updateValue('documentation',$event)" :value="user.documentation" class="form-control" type="number" required/>
