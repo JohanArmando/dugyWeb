@@ -20,7 +20,7 @@ export default {
       })
     } else {
       this.loading = false
-      this.$router.replace('/auth/login')
+      this.$router.replace('/')
     }
   },
   methods: {
