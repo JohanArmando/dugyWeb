@@ -105,7 +105,7 @@ export default {
       var vm = this
       vm.loading = true
       window.$('#edit').button('loading')
-      vm.registerPet(this.form).then(plan => {
+      vm.registerPet(this.form).then(pet => {
         vm.loading = false
         vm.$router.replace(this.$route.query.redirect || '/admin/pets')
       })

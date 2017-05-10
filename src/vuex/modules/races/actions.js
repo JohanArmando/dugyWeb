@@ -1,6 +1,8 @@
 import {
     ALL_RACE,
     REGISTER_RACE,
+    SHOW_RACE,
+    EDIT_RACE,
     REMOVE_RACE
 } from './mutation-types'
 
@@ -24,7 +26,7 @@ export function allRaces ({ commit }, pets) {
 export function registerRace ({ commit }, form) {
   console.log(form)
   return new Promise((resolve, reject) => {
-    axios.post('/races', { name: form.name, color: form.color, born_date: form.born_date, user_id: form.user_id, race_id: form.race_id })
+    axios.post('/races', form)
     .then(response => {
       window.$toast.success('Datos guardados correctamente')
       console.log(response.data)
@@ -33,6 +35,37 @@ export function registerRace ({ commit }, form) {
     })
     .catch(error => {
       console.log('error in register races')
+      reject(error)
+    })
+  })
+}
+
+export function showRace ({ commit }, id) {
+  return new Promise((resolve, reject) => {
+    axios.get('/races/' + id)
+    .then(response => {
+      console.log(response.data)
+      commit(SHOW_RACE, response.data)
+      resolve(response.data)
+    })
+    .catch(error => {
+      console.log('error in race')
+      reject(error)
+    })
+  })
+}
+
+export function editRace ({ commit }, race) {
+  return new Promise((resolve, reject) => {
+    axios.put('/races/' + race.id, race)
+    .then(response => {
+      window.$toast.success('Datos modificados correctamente')
+      console.log(response.data)
+      commit(EDIT_RACE, response.data)
+      resolve(response.data)
+    })
+    .catch(error => {
+      console.log('error in edit race')
       reject(error)
     })
   })

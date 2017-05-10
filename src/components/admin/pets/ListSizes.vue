@@ -1,10 +1,10 @@
 <template>
     <div class="panel panel-default">
       <div class="padding10">
-        <span class="titlePanel">Razas</span>
-        <router-link to="/admin/race" >
+        <span class="titlePanel">Tama&ntilde;os de las Mascotas</span>
+        <router-link to="/admin/size" >
           <span class="marginRight10 pull-right">
-            <i class="fa fa-plus"></i> Crear Raza
+            <i class="fa fa-plus"></i> Crear Tama&ntilde;o
           </span>
         </router-link>
         <hr class="hrDogyy hrDogyyNotMargin">
@@ -13,20 +13,19 @@
         <div v-if="!loading">
           <div class="row">
             <div class="col-md-12">
-            <div class="col-md-3" v-for="race in races">
+            <div class="col-md-3" v-for="size in sizes">
               <div class="row">
                 <div class="boxDoggy text-center">
                   <div class="row">
                     <div class="col-md-12 top20">
-                      <p><strong>{{ race.name }}</strong></p>
-                      <p>{{ race.description.substring(0,20) }}...</p>
+                      <p><strong>{{ size.name }} ( {{ size.slug }} )</strong></p>
                       <p>
-                        <router-link :to="'/admin/race/'+race.id" class="colorDoggy marginRight10">
+                        <router-link :to="'/admin/size/'+size.id" class="colorDoggy marginRight10">
                           <span class="label label-default label-doggy">
                             <i class="fa fa-edit"></i> Editar
                           </span>
                         </router-link>
-                        <span class="label label-default label-doggy-delete cursorPointer" @click="deleteRace(race)">
+                        <span class="label label-default label-doggy-delete cursorPointer" @click="deleteSize(size)">
                           <i class="fa fa-trash"></i> Eliminar
                         </span>
                       </p>
@@ -50,7 +49,7 @@
 import { mapGetters, mapActions } from 'vuex'
 
 export default {
-  name: 'Races',
+  name: 'Sizes',
   data () {
     return ({
       loading: true
@@ -58,11 +57,11 @@ export default {
   },
   computed: {
     ...mapGetters({
-      races: 'getRaces'
+      sizes: 'getSizes'
     })
   },
   beforeMount () {
-    this.allRaces()
+    this.allSizes()
     .then(() => {
       this.loading = false
     })
@@ -71,7 +70,7 @@ export default {
     })
   },
   methods: {
-    deleteRace () {
+    deleteSize () {
       var vm = this
       vm.deleteRace(this.plan).then(plan => {
         vm.loading = false
@@ -84,8 +83,8 @@ export default {
       })
     },
     ...mapActions([
-      'allRaces',
-      'deleteRace'
+      'allSizes',
+      'deleteSize'
     ])
   }
 }

@@ -75,6 +75,7 @@ import { mapActions, mapGetters } from 'vuex'
 import ImageUser from '@/components/admin/users/ImageUser'
 
 export default {
+  name: 'EditUser',
   data () {
     return ({
       aux_user: {},

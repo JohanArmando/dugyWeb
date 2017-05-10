@@ -1,6 +1,8 @@
 import {
     ALL_SIZE,
     REGISTER_SIZE,
+    SHOW_SIZE,
+    EDIT_SIZE,
     REMOVE_SIZE
 } from './mutation-types'
 
@@ -33,6 +35,37 @@ export function registerSize ({ commit }, form) {
     })
     .catch(error => {
       console.log('error in register sizes')
+      reject(error)
+    })
+  })
+}
+
+export function showSize ({ commit }, id) {
+  return new Promise((resolve, reject) => {
+    axios.get('/sizes/' + id)
+    .then(response => {
+      console.log(response.data)
+      commit(SHOW_SIZE, response.data)
+      resolve(response.data)
+    })
+    .catch(error => {
+      console.log('error in size')
+      reject(error)
+    })
+  })
+}
+
+export function editSize ({ commit }, size) {
+  return new Promise((resolve, reject) => {
+    axios.put('/sizes/' + size.id, size)
+    .then(response => {
+      window.$toast.success('Datos modificados correctamente')
+      console.log(response.data)
+      commit(EDIT_SIZE, response.data)
+      resolve(response.data)
+    })
+    .catch(error => {
+      console.log('error in edit size')
       reject(error)
     })
   })

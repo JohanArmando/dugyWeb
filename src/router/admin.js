@@ -5,7 +5,12 @@ import SettingAdmin from '@/components/admin/account/SettingAdmin'
 import ListUsers from '@/components/admin/users/ListUsers'
 import EditUser from '@/components/admin/users/EditUser'
 import ListPets from '@/components/admin/pets/ListPets'
-import CreatePet from '@/components/admin/pets/CreatePet'
+import CreatePet from '@/components/admin/pets/create/CreatePet'
+import CreateRace from '@/components/admin/pets/create/CreateRace'
+import CreateSize from '@/components/admin/pets/create/CreateSize'
+import EditPet from '@/components/admin/pets/edit/EditPet'
+import EditRace from '@/components/admin/pets/edit/EditRace'
+import EditSize from '@/components/admin/pets/edit/EditSize'
 import ListPlans from '@/components/admin/plans/ListPlans'
 import CreatePlan from '@/components/admin/plans/CreatePlan'
 import EditPlan from '@/components/admin/plans/EditPlan'
@@ -41,6 +46,26 @@ export default {
     {
       path: 'pet',
       component: CreatePet
+    },
+    {
+      path: 'pet/:id',
+      component: EditPet
+    },
+    {
+      path: 'race',
+      component: CreateRace
+    },
+    {
+      path: 'race/:id',
+      component: EditRace
+    },
+    {
+      path: 'size',
+      component: CreateSize
+    },
+    {
+      path: 'size/:id',
+      component: EditSize
     },
     {
       path: 'plans',

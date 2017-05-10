@@ -27,6 +27,10 @@ const mutations = {
   },
   [EDIT_PET] (state, pet) {
     state.pets = state.pets.filter(p => p.id !== pet.id)
+    state.pet = pet
+    if (state.pet.id === state.pet.id) {
+      state.pet = state.pet
+    }
   },
   [REMOVE_PET] (state, pet) {
     state.pets = state.pets.filter(p => p.id !== pet.id)

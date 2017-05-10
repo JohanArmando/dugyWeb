@@ -27,6 +27,10 @@ const mutations = {
   },
   [EDIT_RACE] (state, race) {
     state.races = state.races.filter(r => r.id !== race.id)
+    state.race = race
+    if (state.race.id === state.race.id) {
+      state.race = state.race
+    }
   },
   [REMOVE_RACE] (state, race) {
     state.races = state.races.filter(r => r.id !== race.id)
