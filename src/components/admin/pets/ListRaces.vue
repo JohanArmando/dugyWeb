@@ -62,6 +62,7 @@ export default {
     })
   },
   beforeMount () {
+    this.racesSockets()
     this.allRaces()
     .then(() => {
       this.loading = false
@@ -85,7 +86,8 @@ export default {
     },
     ...mapActions([
       'allRaces',
-      'deleteRace'
+      'deleteRace',
+      'racesSockets'
     ])
   }
 }
