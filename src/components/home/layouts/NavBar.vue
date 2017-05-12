@@ -13,11 +13,8 @@
         </a>
       </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="navbar">
-        <ul class="nav navbar-nav">
-
-        </ul>
+        
         <ul class="nav navbar-nav navbar-right">
           <li class="active"><a href="#home">Inicio</a></li>
           <li><a href="#register">Registro</a></li>
@@ -29,8 +26,8 @@
             class="cursorPointer btn btn-mr top10 ">Iniciar Sesion</a>
           </li>
         </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+      </div>
+    </div>
   </nav>
 </template>
 
@@ -58,5 +55,8 @@ export default {
   }
   #navbar {
     border-bottom: 1px solid #ccc;
+  }
+  .navbar .navbar-collapse.in {
+    height: 200px;
   }
 </style>

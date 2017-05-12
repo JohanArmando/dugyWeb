@@ -34,9 +34,9 @@
                   <img class="img-responsive imgMedium" src="../../../assets/img/icono_blanco.png">
               </div>
               <div class="col-md-5 text-center">
-                  <strong class="textMedium whiteColor">Mr Doggy</strong>
-                  <p class="whiteColor psinMarginBottom">instagram.com/MrDoggy</p>
-                  <p class="whiteColor">twitter.com/MrDoggy</p>
+                  <strong class="textMedium whiteColor">Dugy</strong>
+                  <p class="whiteColor psinMarginBottom">instagram.com/Dugy</p>
+                  <p class="whiteColor">twitter.com/Dugy</p>
               </div>
               <div class="col-md-10 text-center">
                   <p class="whiteSmall text-center top20">Tel: 322 256 7845/45784</p>
