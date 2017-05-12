@@ -56,4 +56,7 @@ export default {
       border-bottom: 3px solid #29AFA0;
     }
   }
+  #navbar {
+    border-bottom: 1px solid #ccc;
+  }
 </style>

@@ -18,6 +18,11 @@
                     </div>
                     <div class="col-md-12">
                       <p>{{ user.email }}</p>
+                      <p>
+                        <router-link :to="'/admin/owner/'+user.id" class="notTextDecoration colorDoggy marginRight10">
+                          <i class="fa fa-paw"></i> Mascotas
+                        </router-link>
+                    </p>
                       <p><i class="fa fa-id-card-o"></i> {{ user.documentation }}</p>
                       <p><i class="fa fa-phone"></i> ({{ user.phone }})</p>
                       <p class="pull-right">
@@ -103,3 +108,12 @@ export default {
   }
 }
 </script>
+
+<style>
+  .notTextDecoration{
+    text-decoration: none !important;
+  }
+  .notTextDecoration:hover{
+    color: #000 !important;
+  }
+</style>

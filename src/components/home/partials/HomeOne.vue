@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <h1 class="black"><strong>BIENVENIDO A MR.DOGGY</strong></h1>
+        <h1 class="black"><strong>BIENVENIDO A DUGY</strong></h1>
         <p class="textMedium">Env&iacute;a, pide, paga y saca plata usando<br>
         s&oacute;lo tu celu. Y mejor todo es gratis. Abre <br>
         tu cuenta en 5 minutos y empieza ya!</p>

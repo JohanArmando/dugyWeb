@@ -3,6 +3,7 @@ import Admin from '@/components/admin/Admin'
 import HomeAdmin from '@/components/admin/HomeAdmin'
 import SettingAdmin from '@/components/admin/account/SettingAdmin'
 import ListUsers from '@/components/admin/users/ListUsers'
+import UserListPets from '@/components/admin/users/UserListPets'
 import EditUser from '@/components/admin/users/EditUser'
 import ListPets from '@/components/admin/pets/ListPets'
 import CreatePet from '@/components/admin/pets/create/CreatePet'
@@ -34,6 +35,10 @@ export default {
     {
       path: 'users',
       component: ListUsers
+    },
+    {
+      path: 'owner/:id',
+      component: UserListPets
     },
     {
       path: 'user/:id',

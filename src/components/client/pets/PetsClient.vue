@@ -15,9 +15,9 @@
           <div class="panel-heading">
               Mascotas
               <div class="panel-controls">
-                  <a href="/client/pet">
+                  <router-link to="/client/pet">
                       <i class="fa fa-plus"></i> Crear Mascota
-                  </a>
+                  </router-link>
               </div>
           </div>
           <div class="panel-body">

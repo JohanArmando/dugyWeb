@@ -1,10 +1,10 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="col-md-6 hidden-xs hidden-sm">
-          <img class="img-responsive center-block" src="../../../assets/img/home1.png">
+      <div class="col-md-5 hidden-xs hidden-sm">
+          <img class="img-responsive center-block top50" src="../../../assets/img/home1.png">
       </div>
-      <div class="col-md-4 col-md-offset-1">
+      <div class="col-md-4 col-md-offset-2">
         <div class="text-center">
           <h1 class="black"><strong>Registrate Ahora</strong></h1>
           <p class="textSmall">Obt&eacute;n tres paseos gratis para tu mascota!</p>

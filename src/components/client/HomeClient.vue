@@ -49,69 +49,24 @@
               </div>
           </div>
           <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
-              <div class="panel panel-default" id="panel-fullscreen">
-                  <div class="panel-heading">
-                      Info
-                      <div class="panel-controls">
-                          <a href="javascript:void(0);" class="panel-fullscreen" data-toggle="tooltip"
-                              data-title="Expandir" data-placement="bottom" data-original-title=""title="">
-                              <i class="fa fa-expand hidden"></i>
-                          </a>
-                          <a class="panel-collapsable" role="button" data-toggle="collapse" href="#collapse1">
-                              <i class="fa fa-chevron-up"></i>
-                              <i class="fa fa-chevron-down"></i>
-                          </a>
-                      </div>
-                  </div>
-                  <div class="panel-body" id="collapse1">
-                      <form class="form-horizontal">
-                          <div class="form-group">
-                              <div class="col-sm-6">
-                                  <label>HEX CODE</label>
-                                  <div class="input-group colorpicker-component colorpicker-element">
-                                      <input type="text" value="#29AFA0" class="form-control">
-                                      <span class="input-group-addon"><i style="background-color: rgb(0, 170, 187);"></i></span>
-                                  </div>
-                              </div>
-                              <div class="col-sm-6">
-                                  <label>RGB(A) CODE</label>
-                                  <div class="input-group colorpicker-component colorpicker-element">
-                                      <input type="text" value="rgba(0,0,0,0.7)" class="form-control">
-                                      <span class="input-group-addon"><i style="background-color: rgba(0, 0, 0, 0.701961);"></i></span>
-                                  </div>
-                              </div>
-                          </div>
-                      </form>
-                  </div>
-              </div>
-              <div class="panel panel-default">
+          <div class="panel panel-default">
           <div class="panel-heading">
-              TEXT STYLES
-              <small>You can use classes which names are
-                <code>.font-bold, .font-italic, .font-underline, .font-line-through, .font-overline</code>
+              Agenda
+              <small>Estas son los paseos que le han realizado a tus mascotas
+                <code>todas</code>
               </small>
-              <div class="panel-controls">
-                <a href="javascript:void(0);" class="panel-fullscreen" data-toggle="tooltip"
-                  data-title="Expandir" data-placement="bottom" data-original-title=""title="">
-                  <i class="fa fa-expand hidden"></i>
-                </a>
-                <a class="panel-collapsable" data-toggle="collapse" href="#collapse2" >
-                  <i class="fa fa-chevron-up"></i>
-                  <i class="fa fa-chevron-down"></i>
-                </a>
-              </div>
           </div>
           <div class="panel-body" id="collapse2">
               <div class="row clearfix">
                   <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
                       <p>
-                          <b>Normal</b>
+                          <b>Fecha</b>
                       </p>
-                      <p>Default text</p>
-                      <p class="col-primary">Text primary color</p>
-                      <p class="col-success">Text success color</p>
-                      <p class="col-danger">Text danger color</p>
-                      <p class="col-warning">Text warning color</p>
+                      <p>dia/mes/a&ntilde;o</p>
+                      <p class="col-primary">02/02/2017</p>
+                      <p class="col-success">04/04/2017</p>
+                      <p class="col-danger">06/06/2017</p>
+                      <p class="col-warning">08/08/2017</p>
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
                       <p>

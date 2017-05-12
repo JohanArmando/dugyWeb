@@ -1,8 +1,8 @@
-import socketIOClient from 'socket.io-client'
-import sailsIOClient from 'sails.io.js'
-
-var io = sailsIOClient(socketIOClient)
-io.sails.url = 'http://api.dugy.co'
+// import socketIOClient from 'socket.io-client'
+// import sailsIOClient from 'sails.io.js'
+//
+// var io = sailsIOClient(socketIOClient)
+// io.sails.url = 'http://api.dugy.co'
 
 import {
     LOGIN,
@@ -13,8 +13,7 @@ import {
     ALL,
     USER,
     USER_EDIT,
-    REMOVE_USER,
-    ALL_RACE
+    REMOVE_USER
 } from './mutation-types'
 
 import axios from '../../../services/axios'
@@ -151,19 +150,19 @@ export function logout ({ commit }, user) {
 }
 
 // websockets
-export function racesSockets ({ commit }) {
-  io.socket.get('/api/v1/races', function serverResponded (body, JWR) {
-    console.log('Sails responded with 2: ', body)
-    console.log('with headers: ', JWR.headers)
-  })
-  io.socket.on('races', message => {
-    console.log('hola')
-    console.log(message)
-    switch (message.verb) {
-      case 'created':
-        commit(ALL_RACE, message.data)
-        break
-    }
-    console.log(message)
-  })
-}
+// export function racesSockets ({ commit }) {
+//   io.socket.get('/api/v1/races', function serverResponded (body, JWR) {
+//     console.log('Sails responded with 2: ', body)
+//     console.log('with headers: ', JWR.headers)
+//   })
+//   io.socket.on('races', message => {
+//     console.log('hola')
+//     console.log(message)
+//     switch (message.verb) {
+//       case 'created':
+//         commit(ALL_RACE, message.data)
+//         break
+//     }
+//     console.log(message)
+//   })
+// }

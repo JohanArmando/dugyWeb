@@ -9,25 +9,15 @@
          Consulta con tu operador para m&aacute;s informaci&oacute;n sobre el coste por consumo de
         datos moviles. #consejoswhatsapp #videollamadas.</p>
         <div class="row top50">
-           <div class="col-md-3 text-center">
-              <img class="img-responsive" src="../../../assets/img/plans/plan1.png">
-           </div>
-           <div class="col-md-3 text-center">
-              <img class="img-responsive" src="../../../assets/img/plans/plan2.png">
-           </div>
-           <div class="col-md-3 text-center">
-               <img class="img-responsive" src="../../../assets/img/plans/plan3.png">
-           </div>
-           <div class="col-md-3 text-center">
-              <img class="img-responsive" src="../../../assets/img/plans/plan4.png">
-           </div>
-
             <div class="col-md-3" v-for="plan in plans">
-              <div class="center-block">
-                <img :src="plan.logo.original" class="img-responsive imgPlan">
+              <div class="center-block imgPlanBack">
+                <img :src="plan.logo.original" class="img-responsive">
+                <div class="textFront text-center col-md-11">
+                  <p><h3><strong>{{ plan.name }}</strong></h3></p>
+                  <p><h4>$ {{ plan.price }}</h4></p>
+                  <p> {{ plan.expiration_days }} Dias</p>
+                </div>
               </div>
-               <p><strong>{{ plan.name }}</strong></p>
-               <p>$ {{ plan.price }}</p>
             </div>
         </div>
       </div>
@@ -62,3 +52,12 @@ export default {
 
 }
 </script>
+
+<style>
+  .imgPlanBack{position: relative;}
+  .textFront{position:absolute;top:10px;left:10px;}
+  .textFront p {
+    margin: 2px !important;
+  }
+  .textFront h3{color: #FFF }
+</style>
